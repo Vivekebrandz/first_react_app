@@ -12,7 +12,7 @@ root.render(
   //el
   <React.StrictMode>
     {/* <App /> */}
-    <RouterProvider router={router} basename={"https://vivekebrandz.github.io/my-react-app"} />
+    <RouterProvider router={router} basename={"https://vivekebrandz.github.io/first_react_app"} />
     {/* <App1/> */}
   </React.StrictMode>
 );
