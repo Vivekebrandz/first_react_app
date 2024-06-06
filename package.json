@@ -1,6 +1,7 @@
 {
   "name": "first_react_app",
   "version": "0.1.0",
+  "homepage": "https://vivekebrandz.github.io/my-react-app",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
