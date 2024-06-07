@@ -1,18 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 // import App1 from './App';
-import router from './App';
-import { RouterProvider } from 'react-router-dom';
+import router from "./App";
+import { RouterProvider } from "react-router-dom";
 // import reportWebVitals from './reportWebVitals';
 
 const el = <h1>Hello React!</h1>;
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   //el
   <React.StrictMode>
     {/* <App /> */}
-    <RouterProvider router={router} />
+    <RouterProvider router={router} basename="/first_react_app" />
     {/* <App1/> */}
   </React.StrictMode>
 );
