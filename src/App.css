@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+/* Plane */
+.container {
+  position: relative;
+}
+
+/* .background-image {
+  width: 100%;
+  height: auto;
+} */
+
+.overlay-image {
+  /* Position the overlay image */
+  position: absolute;
+  top: 30%;
+  /* top: calc((100% - 149px)/2); */
+  left: 5%;
+  transform: translate(-50%, -50%);
+  /* Additional styling for the overlay image */
+  width: 200px; /* Adjust the size as needed */
+  height: auto;
+  animation: float-plane 10s linear infinite;
+}
+
+@keyframes float-plane {
+  0% {
+    left: 0; /* Start position on the left */
+    transform: scaleX(1); /* Initial scale */
+  }
+  50% {
+    left: calc(94% - 100px); /* End position on the right */
+    transform: scaleX(1); /* Maintain original scale */
+  }
+  51% {
+    transform: scaleX(-1); /* Flip horizontally */
+  }
+  100% {
+    left: 0; /* Back to the start position */
+    transform: scaleX(-1); /* Maintain flip and original scale */
+  }
+}
+

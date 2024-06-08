@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import BannerCarousel from './BannerCarousel';
+import plane from '../images/plane.gif';
 
 const Button = (params) => {
   const [buttonName, setButtonName] = useState(params.name);
@@ -17,7 +18,10 @@ const Button = (params) => {
 function Home() {
   return (
     <div className="home">
-      <BannerCarousel/>
+      <div className="container">
+        <BannerCarousel/>
+        <img src={plane} alt="Overlay" className="overlay-image fly-right" />
+      </div>
       <h1>Hello World!</h1>
       <Button name="Click me"/>
     </div>
