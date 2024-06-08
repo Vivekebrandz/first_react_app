@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import {createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom';
+import {createBrowserRouter, Outlet} from 'react-router-dom';
 import Header from './Components/Header';
 import Home from './Components/Home';
 // import About from './Components/About';
@@ -20,19 +20,19 @@ function App() {
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/first_react_app',
     element: <App/>,
     children: [
       {
-        path: '/',
+        path: 'first_react_app/',
         element: <Home/>
       },
       {
-        path: '/about',
+        path: 'first_react_app/about',
         element: <Suspense><About/></Suspense>
       },
       {
-        path: '/contact',
+        path: 'first_react_app/contact',
         element: <Contact/>
       }
     ]
