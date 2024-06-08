@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from './App';
-// import router from "./App";
+import router from "./App";
 import { RouterProvider } from "react-router-dom";
 // import reportWebVitals from './reportWebVitals';
 
@@ -11,8 +11,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   //el
   <React.StrictMode>
-    <App />
-    {/* <RouterProvider router={router} /> */}
+    {/* <App /> */}
+    <RouterProvider router={router} />
     {/* <App1/> */}
   </React.StrictMode>
 );
