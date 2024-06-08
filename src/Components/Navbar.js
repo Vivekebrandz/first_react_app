@@ -77,7 +77,7 @@ const Navbar = () => {
               <MenuItem
                 onClick={handleClose}
               >
-                <Link to='/about'>Contact Us</Link>
+                <Link to='/contact'>Contact Us</Link>
               </MenuItem>
             </Menu>
         </>
