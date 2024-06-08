@@ -20,19 +20,19 @@ function App() {
 
 const router = createBrowserRouter([
   {
-    path: '/first_react_app/',
+    path: '/',
     element: <App/>,
     children: [
       {
-        path: '/first_react_app/',
+        path: '/',
         element: <Home/>
       },
       {
-        path: '/first_react_app/about',
+        path: '/about',
         element: <Suspense><About/></Suspense>
       },
       {
-        path: '/first_react_app/contact',
+        path: '/contact',
         element: <Contact/>
       }
     ]
