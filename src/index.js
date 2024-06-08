@@ -11,8 +11,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   //el
   <React.StrictMode>
-    {/* <App /> */}
-    <RouterProvider router={router} />
+    <App />
+    {/* <RouterProvider router={router} /> */}
     {/* <App1/> */}
   </React.StrictMode>
 );
