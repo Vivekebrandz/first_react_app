@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import BannerCarousel from './BannerCarousel';
-import plane from '../images/plane.gif';
+import plane from '../images/plane.png';
 
 const Button = (params) => {
   const [buttonName, setButtonName] = useState(params.name);
