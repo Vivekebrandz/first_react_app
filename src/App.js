@@ -37,7 +37,8 @@ const router = createBrowserRouter([
       }
     ]
   }
-], {basename :'/first_react_app'});
+// ], {basename :'/first_react_app'});
+]);
 
 export default router;
 
