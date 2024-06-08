@@ -24,15 +24,15 @@ const router = createBrowserRouter([
     element: <App/>,
     children: [
       {
-        path: 'first_react_app/',
+        path: '/first_react_app/',
         element: <Home/>
       },
       {
-        path: 'first_react_app/about',
+        path: '/first_react_app/about',
         element: <Suspense><About/></Suspense>
       },
       {
-        path: 'first_react_app/contact',
+        path: '/first_react_app/contact',
         element: <Contact/>
       }
     ]

@@ -27,9 +27,9 @@ const Navbar = () => {
               container justifyContent={'flex-end'}
               >            
               <Stack direction={'row'} spacing={2}>
-                <Link to='/'>Home</Link>
-                <Link to='/about'>About Us</Link>
-                <Link to='/contact'>Contact Us</Link>
+                <Link to='/first_react_app/'>Home</Link>
+                <Link to='/first_react_app/about'>About Us</Link>
+                <Link to='/first_react_app/contact'>Contact Us</Link>
               </Stack>
             </Grid>
             </Hidden>
