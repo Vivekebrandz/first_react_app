@@ -15,21 +15,16 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    label: 'clouds',
     imgPath: clouds,
   },
   {
-    label: 'Bird',
+    label: 'clouds',
     imgPath: clouds,
   },
   {
-    label: 'Bali, Indonesia',
+    label: 'clouds',
     imgPath: clouds,
-  },
-  {
-    label: 'Goč, Serbia',
-    imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
   },
   {
     label: 'clouds',
