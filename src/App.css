@@ -38,25 +38,42 @@
 }
 
 /* Plane */
-.container {
+/* .container {
   position: relative;
-}
+} */
 
 /* .background-image {
   width: 100%;
   height: auto;
 } */
 
-.overlay-image {
-  /* Position the overlay image */
+/* .overlay-image {
   position: absolute;
   top: 30%;
-  /* top: calc((100% - 149px)/2); */
   left: 5%;
   transform: translate(-50%, -50%);
-  /* Additional styling for the overlay image */
-  width: 200px; /* Adjust the size as needed */
+  width: 200px;
   height: auto;
+  animation: float-plane 20s linear infinite;
+} */
+
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  width: 100%;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  max-width: 20%;
+  height: auto;
+  z-index: 10;
   animation: float-plane 20s linear infinite;
 }
 
@@ -75,6 +92,31 @@
   100% {
     left: 0; /* Back to the start position */
     transform: scaleX(-1); /* Maintain flip and original scale */
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .overlay-image {
+    max-width: 25%;
+    bottom: 15%;
+    right: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay-image {
+    max-width: 30%;
+    bottom: 20%;
+    right: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-image {
+    max-width: 40%;
+    bottom: 25%;
+    right: 5%;
   }
 }
 

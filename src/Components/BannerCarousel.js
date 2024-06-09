@@ -10,6 +10,9 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import clouds from '../images/clouds.png';
+import mountains from '../images/moutains.jpg';
+import trees from '../images/trees.jpg';
+import { useEffect, useState, useRef } from 'react';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -19,17 +22,9 @@ const images = [
     imgPath: clouds,
   },
   {
-    label: 'clouds',
-    imgPath: clouds,
-  },
-  {
-    label: 'clouds',
-    imgPath: clouds,
-  },
-  {
-    label: 'clouds',
-    imgPath: clouds,
-  },
+    label: 'trees',
+    imgPath: trees,
+  }
 ];
 
 function BannerCarousel() {
@@ -50,25 +45,13 @@ function BannerCarousel() {
   };
 
   return (
-    <Box sx={{ maxWidth: '100%', flexGrow: 1 }}>
-      {/* <Paper
-        square
-        elevation={0}
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          height: 50,
-          pl: 2,
-          bgcolor: 'background.default',
-        }}
-      >
-        <Typography>{images[activeStep].label}</Typography>
-      </Paper> */}
+    <Box sx={{ maxWidth: '100%', flexGrow: 1 }} className="carousel-container">
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
         onChangeIndex={handleStepChange}
         enableMouseEvents
+        interval={7000}
       >
         {images.map((step, index) => (
           <div key={step.label}>
@@ -89,7 +72,7 @@ function BannerCarousel() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
-      <MobileStepper
+      {/* <MobileStepper
         steps={maxSteps}
         position="static"
         activeStep={activeStep}
@@ -117,7 +100,7 @@ function BannerCarousel() {
             Back
           </Button>
         }
-      />
+      /> */}
     </Box>
   );
 }
