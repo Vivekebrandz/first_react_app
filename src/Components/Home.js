@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import BannerCarousel from './BannerCarousel';
 import plane from '../images/plane_1.gif';
+import TypewriterComponent from 'typewriter-effect';
 
 const Button = (params) => {
   const [buttonName, setButtonName] = useState(params.name);
@@ -22,7 +23,24 @@ function Home() {
         <BannerCarousel/>
         <img src={plane} alt="Overlay" className="overlay-image fly-right" />
       </div>
-      <h1>Hello World!</h1>
+      {/* <Typewriter
+        options={{
+          strings: ['Hello', 'World'],
+          autoStart: true,
+          loop: true,
+        }}
+      /> */}
+      <h1>
+        I am 
+      <TypewriterComponent 
+        options={{
+          strings: ['Vivek', 'a software engineer', 'web developer'],
+          autoStart: true,
+          loop: true,
+        }}
+        />
+      </h1>
+      {/* <h1>Hello World!</h1> */}
       <Button name="Click me"/>
     </div>
   );
